@@ -1,0 +1,219 @@
+
+package holygame;
+ //* @author Vinicius Mafra
+import java.util.Scanner;
+public class HolyGame {
+
+    public static void historia(int personagem) throws InterruptedException {
+        
+        int escolha;
+        
+        String limpaBuffer;           
+        String confirmar; 
+        
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.println("             O que pretende fazer?            ");
+        switch(personagem) {
+            case 1:
+                System.out.println("!@=----------------------------------------=@!");
+                System.out.println("    1 > Procurar aliados para suas missões");
+                System.out.println("    2 > Iniciar uma dungeon sozinho.");
+                System.out.println("    3 > Sair do Jogo.");
+                System.out.println("!@=----------------------------------------=@!");
+                System.out.print("Escolha: ");
+                escolha = ler.nextInt();  
+                System.out.println("");
+                Thread.sleep(250);
+                
+                switch(escolha) {
+                    case 1:
+                        System.out.println("1 > Procurar aliados para suas missões");
+                        System.out.println("Ao caminho do Centro de Classe carregando"
+                                + " seus equipamentos acabou esbarrando com Math que acaba de iniciar o game.");
+                        Thread.sleep(7000);
+                        
+                        System.out.println("Recolhendo itens do chão...");
+                        Thread.sleep(3000);
+                        System.out.println("Niko que ja estava á procura de aliados e recruta Math para sua equipe.");
+                        
+                        break;
+                    case 2:
+                        System.out.println("2 > Iniciar uma dungeon sozinho.");
+                        System.out.println("Neko com sua alto confiança entra em uma dungeon de Lv alto e acaba morrendo!");
+                        System.out.println("Fim de Jogo!");
+                        Thread.sleep(1000);
+                        System.exit(0);
+                        break;
+                    case 3:
+                        System.out.println("3 > Sair do Jogo.");
+                        Thread.sleep(1000);
+                        System.exit(0);
+                        break;
+                }
+                break;
+            case 2:
+                System.out.println("!@=----------------------------------------=@!");
+                System.out.println("    1 > Ir ao Centro de Classe.");
+                System.out.println("    2 > Ir em lugares fracos para upar seu Lv. Custo de 50c...");
+                System.out.println("    3 > Sair do Jogo.");
+                System.out.println("!@=----------------------------------------=@!");
+                System.out.print("Escolha: ");
+                escolha = ler.nextInt();  
+                System.out.println("");
+                Thread.sleep(250);
+                
+                switch(escolha) {
+                    case 1:
+                        System.out.println("1 > Ir ao Centro de Classe.");
+                        System.out.println("Ao ir ao centro de classe, Math encontra uma Guerreira chamada Diana,"
+                                + " da Classe assassina.");
+                        Thread.sleep(2000);
+                        System.out.println("Ela diz que pode mostrar métodos mais fáceis de subir de nível.");
+                        Thread.sleep(1000);
+                        System.out.println("Mas você teria que se tornar um assassino!");
+                        System.out.println("Deseja se tornar um assasino?");
+                        System.out.println("    <Aceitar> <Recusar>");
+                        System.out.print("             ");
+                        limpaBuffer = ler.nextLine();
+                        confirmar = ler.nextLine();
+                        System.out.println("");
+                        
+                        if(confirmar.toUpperCase().charAt(0) == 'A') {
+                            System.out.println("\n!@=----------------------------------------=@!");
+                            System.out.println("Concluído!");
+                            System.out.println("Math upou de classe, assassino Lv 7!");
+                            System.out.println("!@=----------------------------------------=@!");
+                            Thread.sleep(2000);
+                        }
+                        System.out.println("Ao chegar no centro, Math percebeu que já tinha passado o tempo de inscrição de equipes.");
+                        System.out.println("Acabou conhecendo Neko, o Príncipe guerreiro de HolyCity que também chegou fora do horário.");
+                        System.out.println("Neko se interessa em recrutá-lo, diz que Math tem potência e pode te ajudar muito no futuro.");
+                        Thread.sleep(10000);
+                        System.out.println("Agora na equipe de Math temos o Neko que ajudará a equipe em momentos extremos, "
+                                    + "Math que é iniciante em dungeon, mas confia no seu poder e Neko que seguirá como líder da equipe!");
+                        Thread.sleep(1000);
+                        System.out.println("Fim de Jogo!");
+                        Thread.sleep(1000);
+                        System.exit(0);
+                        break;
+                    case 2:
+                        System.out.println("2 > Ir em lugares fracos para upar seu Lv. Custo de 50c...");
+                        System.out.println("-50c\n");
+                        Thread.sleep(1000);
+                        
+                        System.out.println("!@=----------------------------------------=@!");
+                        System.out.println("Dungeon Concluída.");
+                        System.out.println("Math: Ataques Lv5.");
+                        System.out.println("!@=----------------------------------------=@!");
+                        System.out.println("Math decide ir ao Centro de Classes....");
+                        System.out.println("...");
+                        Thread.sleep(2000);
+                        System.out.println("Ao chegar no centro, Math percebeu que já tinha passado o tempo de inscrição de equipes.");
+                        Thread.sleep(1000);
+                        System.out.println("Acabou conhecendo Neko, o Príncipe guerreiro de HolyCity que também chegou fora do horário.");
+                        Thread.sleep(1000);
+                        System.out.println("Neko se interessa em recrutá-lo, diz que Math tem potência e pode te ajudar muito no futuro.");
+                        Thread.sleep(1000);
+                        System.out.println("Deseja ser recrutado por Neko?");
+                        System.out.println("    <Aceitar> <Recusar>");
+                        System.out.print("             ");
+                        limpaBuffer = ler.nextLine();
+                        confirmar = ler.nextLine();
+                        System.out.println("");
+                        
+                        if(confirmar.toUpperCase().charAt(0) == 'A') {
+                            System.out.println("Agora na equipe de Math temos o Neko que ajudará a equipe em momentos extremos, "
+                                    + "Math que é iniciante em dungeon, mas confia no seu poder e Neko que seguirá como líder da equipe!");
+                        } else if(confirmar.toUpperCase().charAt(0) == 'R') {
+                            System.out.println("Ao passar o dia Math vai testar seu poder em dungeon "
+                                    + "e acaba morrendo por falta de experiência de batalha.");
+                        }
+                        Thread.sleep(1000);
+                        System.out.println("Fim de Jogo!");
+                        Thread.sleep(1000);
+                        System.exit(0);
+                        break;
+                    case 3:
+                        System.out.println("3 > Sair do Jogo.");
+                        Thread.sleep(1000);
+                        System.exit(0);
+                        break;
+                }
+                break;
+        }
+    }
+    
+    public static void main(String[] args) throws InterruptedException { 
+        int personagem;                 // Escolhe o personagem.
+        
+        String limpaBuffer;             // Limpa o buffer.
+        String confirmar;               // Confirma o personagem.
+        
+        boolean repetir;                // Repete caso escolha de personagem for indefinida.
+        
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.println("~@==================@~");
+        System.out.println("   Seja Bem Vindo");
+        System.out.println("     Em HolyCity");
+        System.out.println("~@==================@~\n");
+        Thread.sleep(2000);
+
+        // Tela de Seleção de Personagem.
+        do {
+            repetir = false;  // Variável para sair do laço Do While.
+            System.out.println("Escolha seu Personagem");
+            System.out.println("~@==================@~");
+            System.out.println("1 > Neko - Guerreiro");
+            System.out.println("2 > Math - Iniciante");
+            System.out.println("~@==================@~");
+            System.out.print("Personagem:");
+            personagem = ler.nextInt();
+            System.out.println("");
+
+            switch(personagem) {
+                case 1:
+                    System.out.println("~@==========================================================================================@~");
+                    System.out.println("1 - Neko um ótimo guerreiro de HolyCity, protetor dos quatro campos negativos do Castelo,");
+                    System.out.println("por seu pai ser ex grande aventureiro ele anda à procura de equipe para iniciar suas dungeons.");
+                    System.out.println("~@==========================================================================================@~");
+                    System.out.println("                                 <Confirmar> <Recusar>                                        ");
+                    System.out.print("                                            ");
+                    limpaBuffer = ler.nextLine();
+                    confirmar = ler.nextLine();
+                    System.out.println("");
+                    System.out.println("");
+                    
+                    if(confirmar.toUpperCase().charAt(0) == 'R') repetir = true;
+                    Thread.sleep(1000);
+                    break;
+                case 2:
+                    System.out.println("~@============================================================================================@~");
+                    System.out.println("2 - Math é um elfo adolescente confiante, divertido e pretende iniciar uma aventura solo, porem");
+                    System.out.println("não sabe qual classe seguir e, também, não sabe como com o seu nível baixo.");
+                    System.out.println("~@============================================================================================@~");
+                    System.out.println("                                 <Confirmar> <Recusar>                                        ");
+                    System.out.print("                                            ");
+                    limpaBuffer = ler.nextLine();
+                    confirmar = ler.nextLine();
+                    System.out.println("");
+                    System.out.println("");
+                    
+                    if(confirmar.toUpperCase().charAt(0) == 'R') repetir = true;
+                    Thread.sleep(1000);
+                    break;
+                default:
+                    System.out.println("~@===========@~");
+                    System.out.println("Erro na Seleção");
+                    System.out.println("~@===========@~\n");
+                    Thread.sleep(2000);
+                    repetir = true;
+                    break;
+            }        
+        } while(repetir);
+        
+        // História...
+        historia(personagem);
+    }
+}
