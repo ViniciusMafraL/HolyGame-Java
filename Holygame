@@ -145,12 +145,12 @@ public class HolyGame {
     }
     
     public static void main(String[] args) throws InterruptedException { 
-        int personagem;                 // Escolhe o personagem.
+        int personagem;                 
         
-        String limpaBuffer;             // Limpa o buffer.
-        String confirmar;               // Confirma o personagem.
+        String limpaBuffer;             
+        String confirmar;               
         
-        boolean repetir;                // Repete caso escolha de personagem for indefinida.
+        
         
         Scanner ler = new Scanner(System.in);
         
@@ -160,9 +160,9 @@ public class HolyGame {
         System.out.println("~@==================@~\n");
         Thread.sleep(2000);
 
-        // Tela de Seleção de Personagem.
+        
         do {
-            repetir = false;  // Variável para sair do laço Do While.
+            repetir = false;  
             System.out.println("Escolha seu Personagem");
             System.out.println("~@==================@~");
             System.out.println("1 > Neko - Guerreiro");
@@ -213,7 +213,7 @@ public class HolyGame {
             }        
         } while(repetir);
         
-        // História...
+        
         historia(personagem);
     }
 }
