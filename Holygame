@@ -7,7 +7,7 @@ public class HolyGame {
     public static void historia(int personagem) throws InterruptedException {
         
         int escolha;
-        
+        int escolha 2;
         String limpaBuffer;           
         String confirmar; 
         
