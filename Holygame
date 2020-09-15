@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HolyGame {
 
     public static void historia(int personagem) throws InterruptedException {
-        
+        int  esolhacerta;
         int escolha;
         int escolha 2;
         String limpaBuffer;           
